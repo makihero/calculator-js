@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>mi calculadora</title>
+  </head>
+  <body>
+    <button id="mode-toggle">modo</button>
+
+    <div class="container">
+      <div class="call-box">
+        <input type="text" id="display" class="display displayNM" />
+        <br />
+
+        <button onclick="appendToDisplay(7)">7</button>
+        <!-- Agrega el número 7 al display -->
+        <button onclick="appendToDisplay(8)">8</button>
+        <!-- Agrega el número 8 al display -->
+        <button onclick="appendToDisplay(9)">9</button>
+        <!-- Agrega el número 9 al display -->
+        <button class="operation-button" onclick="appendToDisplay('+')">
+          +
+        </button>
+        <!-- Agrega el operador de suma al display -->
+        <br />
+
+        <button onclick="appendToDisplay(4)">4</button>
+        <button onclick="appendToDisplay(5)">5</button>
+        <button onclick="appendToDisplay(6)">6</button>
+        <button class="operation-button" onclick="appendToDisplay('-')">
+          -
+        </button>
+        <br />
+
+        <button onclick="appendToDisplay(1)">1</button>
+        <button onclick="appendToDisplay(2)">2</button>
+        <button onclick="appendToDisplay(3)">3</button>
+        <button class="operation-button" onclick="appendToDisplay('*')">
+          x
+        </button>
+        <!-- Agrega el operador de multiplicación al display -->
+        <br />
+
+        <button class="clear-button" onclick="clearDisplay()">C</button>
+        <!-- Limpia la pantalla -->
+        <button onclick="appendToDisplay(0)">0</button>
+        <button class="operation-button" onclick="calculateResult()">=</button>
+        <!-- Calcula el resultado de la expresión en el display -->
+        <button class="operation-button" onclick="appendToDisplay('/')">
+          /
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
